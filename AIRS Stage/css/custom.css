@@ -293,7 +293,7 @@ header.header,
     margin-top: 0px;
     height: 0px;
     transition: 0.2s;
-    width: 100%;
+    width: calc(100% - 30px);
     opacity: 0;
     background-color: #f1f2f3;
     font-size: 16px;
