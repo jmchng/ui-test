@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AIRS Stage</title>
+    <link href="css/custom.css" rel="stylesheet" type="text/css"/>
+
+    <script src="js/jquery.min.js"></script>
+    <script>
+        console.log('test');
+    $(function(){
+
+        $('.sheet .header').on('click', function(){
+            $('.sheet-container').toggleClass('fade-out');
+        });
+
+        $('.sheet-toggle').on('click', function(){
+            $('.sheet-container').toggleClass('fade-out');
+        });
+
+        $('.rmk-toggle').on('click', function(){
+            $('.rmk-txt-wrap').toggleClass('active');
+            $('textarea').attr('autofocus');
+        });
+
+        $('.switch').on('click', function(){
+            $(this).children('.checkbox').toggleClass('checked');
+        });
+
+    });
+    </script>
+</head>
+<body>
+    <header class="header">
+        <div class="status_bar">
+            <img src="img/img_statusbar_wifi.png" alt="">
+            <img src="img/img_statusbar_time.png" alt="">
+            <img src="img/img_statusbar_battery.png" alt="">
+        </div>
+        <div class="nav_bar">
+            <img src="img/ic_28pt_back.png" alt="">
+            <div class="title">
+                <div class="locate">
+                    <img src="img/ic_16pt_offline.png" alt="">
+                    DEP Flights
+                </div>
+                <div class="update">
+                    Updated 2021/04/30 09:41:05
+                </div>
+            </div>
+            <img src="img/ic_28pt_hamburger_dotted.png" alt="">
+        </div>
+    </header>
+
+    <div class="banner">
+        <div class="breif">
+            <div class="flt">
+                JX0202 <span>,</span>
+                30 APR 21 <span>,</span>
+                TPE - MFM
+            </div>
+            <img src="img/ic_44pt_lock_DEP.png" alt="">
+        </div>
+        <div class="tablist">
+            <div class="tab">
+                INFO
+            </div>
+            <div class="tab active">
+                STAGE
+            </div>
+            <div class="tab">
+                ANNCMT
+            </div>
+            <div class="tab">
+                RMK(0)
+            </div>
+        </div>
+    </div>
+
+    <div class="con">
+        <div class="card card-header">
+            <div class="light"></div>
+            <div class="stage-name">STAGE</div>
+            <div class="time">START</div>
+            <div class="time">COMPLETE</div>
+        </div>
+
+        <div class="card stage-card">
+            <div class="light error"></div>
+            <div class="stage-name">A/C in Position</div>
+            <div class="time d-na">N/A</div>
+            <a href="javascript:;" class="sheet-toggle">
+                <div class="time d-r">12:55</div>
+            </a>
+        </div>
+        <div class="card stage-card">
+            <div class="light"></div>
+            <div class="stage-name">Prev.FLT Landed</div>
+            <div class="time d-na">N/A</div>
+            <a href="javascript:;" class="sheet-toggle">
+                <div class="time d-r">12:55</div>
+            </a>
+        </div>
+        <div class="card stage-card">
+            <div class="light"></div>
+            <div class="stage-name">Prev.FLT Block in</div>
+            <div class="time d-na">N/A</div>
+            <a href="javascript:;" class="sheet-toggle">
+                <div class="time d-r">12:55</div>
+            </a>
+        </div>
+        <div class="card stage-card">
+            <div class="light"></div>
+            <div class="stage-name">PBB/Pax Step-Connected</div>
+            <a href="javascript:;" class="sheet-toggle">
+                <div class="time regular">12:55</div>
+            </a>
+            <a href="javascript:;" class="sheet-toggle">
+                <div class="time error">
+                    <div>12:55 <br> <span>(-15)</span></div>
+                </div>
+            </a>
+        </div>
+        <div class="card stage-card">
+            <div class="light warning"></div>
+            <div class="stage-name">Door Open</div>
+            <div class="time d-na">N/A</div>
+            <a href="javascript:;" class="sheet-toggle">
+                <div class="time regular">
+                    <div>12:55 <br> <span>(-15)</span></div>
+                </div>
+            </a>
+        </div>
+        <div class="card stage-card">
+            <div class="light success"></div>
+            <div class="stage-name">Pax Disembarkation</div>
+            <div class="time d-na">N/A</div>
+            <a href="javascript:;" class="sheet-toggle">
+                <div class="time d">--:--</div>
+            </a>
+        </div>
+        <div class="card stage-card">
+            <div class="light error"></div>
+            <div class="stage-name">Crew Disembarkation</div>
+            <div class="time d-na">N/A</div>
+            <a href="javascript:;" class="sheet-toggle">
+                <div class="time regular">
+                    <div>12:55 <br> <span>(-15)</span></div>
+                </div>
+            </a>
+        </div>
+        <div class="card stage-card">
+            <div class="light success"></div>
+            <div class="stage-name">Catering&Cabin Supply</div>
+            <a href="javascript:;" class="sheet-toggle">
+                <div class="time d">--:--</div>
+            </a>
+            <a href="javascript:;" class="sheet-toggle">
+                <div class="time d">--:--</div>
+            </a>
+        </div>
+        <div class="card stage-card">
+            <div class="light success"></div>
+            <div class="stage-name">Catering&Cabin Supply</div>
+            <a href="javascript:;" class="sheet-toggle">
+                <div class="time d">--:--</div>
+            </a>
+            <a href="javascript:;" class="sheet-toggle">
+                <div class="time d">--:--</div>
+            </a>
+        </div>
+        <div class="card stage-card">
+            <div class="light success"></div>
+            <div class="stage-name">Catering&Cabin Supply</div>
+            <a href="javascript:;" class="sheet-toggle">
+                <div class="time d">--:--</div>
+            </a>
+            <a href="javascript:;" class="sheet-toggle">
+                <div class="time d">--:--</div>
+            </a>
+        </div>
+        <div class="card stage-card">
+            <div class="light success"></div>
+            <div class="stage-name">Catering&Cabin Supply</div>
+            <a href="javascript:;" class="sheet-toggle">
+                <div class="time d">--:--</div>
+            </a>
+            <a href="javascript:;" class="sheet-toggle">
+                <div class="time d">--:--</div>
+            </a>
+        </div>
+    </div>
+
+    <div class="sheet-container">
+        <div class="sheet">
+            <div class="header">
+                A/C in Position
+                <a href="javascript:;" class="close">
+                    <img src="img/ic_28pt_close_gray.png" alt="">
+                </a>
+            </div>
+            <div class="content">
+                <form class="date">
+                    <label for="Date">Date</label>
+                    <input type="date" id="A/C in position" name="A/C in position">
+                </form>
+                <form class="time">
+                    <label for="Date">Time</label>
+                    <input type="time" id="A/C in position" name="A/C in position">
+                </form>
+                <div class="form-group">
+
+                    <form class="switch-toggle">
+                        <div for="Date">N/A</div>
+                        <div class="switch">
+                            <div class="checkbox"></div>
+                            <span class="slider round"></span>
+                        </div>
+                    </form>
+                    <form class="switch-toggle rmk-toggle">
+                        <div for="Date">Remark</div>
+                        <div class="switch">
+                            <div class="checkbox"></div>
+                            <span class="slider round"></span>
+                        </div>
+                    </form>
+                    <!-- <form>
+                        <label for="Date">N/A</label>
+                        <label class="switch">
+                            <input type="checkbox">
+                            <span class="slider round"></span>
+                        </label>
+                    </form>
+                    <form class="rmk-toggle">
+                        <label for="Date">Remark</label>
+                        <label class="switch">
+                            <input type="checkbox">
+                            <span class="slider round"></span>
+                        </label>
+                    </form> -->
+                </div>
+
+                <textarea class="rmk-txt-wrap" rows="10"></textarea>
+
+            </div>
+            <div class="btn">
+                <a href="javascript:;" class="sheet-toggle">
+                    Complete
+                </a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
